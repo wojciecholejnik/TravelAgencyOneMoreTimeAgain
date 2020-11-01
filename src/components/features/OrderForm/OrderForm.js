@@ -5,16 +5,17 @@ import OrderSummary from '../OrderSummary/OrderSummary';
 
 
 
-const OrderForm = props => (
+const OrderForm = ({tripCost, options}) => (
   <Row>
     <Col xs={12}>
-      <OrderSummary cost={props.tripCost}/>
+      <OrderSummary cost={tripCost} options={options}/>
     </Col>
   </Row>
 );
 
 OrderForm.propTypes = {
   tripCost: PropTypes.node,
+  options: PropTypes.object,
 };
 
 
