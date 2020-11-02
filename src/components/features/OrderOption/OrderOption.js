@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import {Row, Col} from 'react-flexbox-grid';
 import styles from './OrderOption.scss';
 import OrderOptionCheckboxes from './OrderOptionCheckboxes';
@@ -23,16 +23,11 @@ const OrderOption = ({name, type, setOrderOption, id, ...otherProps}) => {
     return (
       <div className={styles.component}>
         <h3 className={styles.title}>{name}</h3>
-        <OptionComponent {...otherProps} setOptionCalue = {value => setOrderOption({[id]:[value]})}/>
+        <OptionComponent {...otherProps} setOptionValue={value => setOrderOption({[id]: value})} />
       </div>
     );
   }
 };
 
-OrderOption.propTypes = {
-  name: PropTypes.string,
-  type: PropTypes.node,
-  otherProps: PropTypes.object,
-};
 
 export default OrderOption;

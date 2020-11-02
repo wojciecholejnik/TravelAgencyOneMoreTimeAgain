@@ -35,16 +35,13 @@ export const getTripById = ({trips}, tripId) => {
   // TODO - filter trips by tripId
   const filtered = trips.find(trip => trip.id == tripId);
 
-  console.log('filtering trips by tripId:', tripId, filtered);
   return filtered;
 };
 
 export const getTripsForCountry = ({trips}, countryCode) => {
   // TODO - filter trips by countryCode
-
   const filtered = trips.filter(trip => trip.country.code == countryCode);
 
-  console.log('filtering trips by countryCode:', countryCode, filtered);
   return filtered;
 };
 
