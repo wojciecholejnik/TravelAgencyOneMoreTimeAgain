@@ -8,15 +8,16 @@ import {formatPrice} from '../../../utils/formatPrice';
 
 
 const OrderOptionIcons = ({values, setOptionValue, currentValue, required}) => (
-  <div className={styles.icon}>
+  <div className={styles.icon} key={'iconDiv'}>
 
     {required ? '' : (
       <div
         value={currentValue}
         onClick={() => setOptionValue('')}
+        key={'0'}
       >
-        <Icon name={'times-circle'}/>
-        <p>none</p>
+        <Icon key={'1'} name={'times-circle'}/>
+        <p key={'2'} >none</p>
       </div>
     )}
 
@@ -26,7 +27,7 @@ const OrderOptionIcons = ({values, setOptionValue, currentValue, required}) => (
         value={value.id}
         onClick={() => setOptionValue(value.id)}
       >
-        <Icon name={value.icon}></Icon>
+        <Icon name={value.icon} key={value.id}></Icon>
         {value.name}
         {formatPrice(value.price)}
       </div>
