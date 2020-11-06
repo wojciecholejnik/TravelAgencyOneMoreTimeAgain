@@ -9,7 +9,10 @@
     "prebuild": "npm run clean",
     "build": "webpack --mode production",
     "lint": "eslint src/",
-    "web": "http-server dist"
+    "web": "http-server dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors"
   },
   "husky": {
     "hooks": {
