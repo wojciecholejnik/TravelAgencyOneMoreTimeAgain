@@ -16,7 +16,7 @@ class OrderOptionDate extends React.Component {
      startDate: new Date(),
    };
 
-   handleChange = (date='08.11.2020') => {
+   handleChange = date => {
      this.setState({
        startDate: date,
      });
