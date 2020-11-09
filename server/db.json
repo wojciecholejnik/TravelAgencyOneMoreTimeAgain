@@ -1,0 +1,42 @@
+{
+  "orders": [
+    {
+      "car-rental": "suv",
+      "accommodation": "house",
+      "features": [
+        "security",
+        "pool",
+        "kitchen",
+        "all-inclusive"
+      ],
+      "adults": "2",
+      "children": 0,
+      "name": "Marta",
+      "contact": "123456789",
+      "start-date": "",
+      "tripName": "Awesome cruise in excellent Ukraine",
+      "id": "5cc1d101b6e68c2984603b70",
+      "countryCode": "UKR",
+      "totalCost": "$134,969"
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "house",
+      "features": [
+        "security",
+        "pool",
+        "kitchen",
+        "all-inclusive"
+      ],
+      "adults": "2",
+      "children": 0,
+      "name": "afdasfaf",
+      "contact": "zczxcz",
+      "start-date": "",
+      "tripName": "Marvelous foray in brilliant Tokelau",
+      "id": "5cc1d1011736309a788fd36d",
+      "countryCode": "TKL",
+      "totalCost": "$269,203"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({variant = '', ...otherProps}) => (
   <button
+    type='submit'
     {...otherProps}
     className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}
   />
