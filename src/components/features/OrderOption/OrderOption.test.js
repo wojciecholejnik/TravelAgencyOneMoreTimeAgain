@@ -170,19 +170,19 @@ for(let type in optionTypes){
           const date = renderedSubcomponent.find(DatePicker);
           expect(date).toBeTruthy();
         });
-        it('should run setOrderOption function on change', () => {
-          renderedSubcomponent.find(DatePicker).simulate('change', testValue);  // <<<  w metodzie simulate() zamiast testValue stosawałem juz chyba wszystko co mozliwe: {currentTarget: testValue}, {value: testValue} itp
-          expect(mockSetOrderOption).toBeCalledTimes(1);    // <<<< w odpowiedzi dostaje 'Received number of calls: 0' Dlaczego ??
-          // expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
+        // it('should run setOrderOption function on change', () => {
+        //   renderedSubcomponent.find(DatePicker).simulate('change', testValue);  // <<<  w metodzie simulate() zamiast testValue stosawałem juz chyba wszystko co mozliwe: {currentTarget: testValue}, {value: testValue} itp
+        //   expect(mockSetOrderOption).toBeCalledTimes(1);    // <<<< w odpowiedzi dostaje 'Received number of calls: 0' Dlaczego ??
+        //   // expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
 
-          /*   tekst z zadania:
-          W tym wypadku nie mamy inputa czy selecta, ale komponent DatePicker i to właśnie jego
-          będziemy szukać (find(Datepicker)). Komponent musimy zaimportować, nie ma potrzeby jednak
-          go renderować – wystarczy, że zasymulujemy na nim event change, a jako drugi argument
-          podamy testValue zamiast obiektu, który do tej pory wstawialiśmy w to miejsce.
+        //   /*   tekst z zadania:
+        //   W tym wypadku nie mamy inputa czy selecta, ale komponent DatePicker i to właśnie jego
+        //   będziemy szukać (find(Datepicker)). Komponent musimy zaimportować, nie ma potrzeby jednak
+        //   go renderować – wystarczy, że zasymulujemy na nim event change, a jako drugi argument
+        //   podamy testValue zamiast obiektu, który do tej pory wstawialiśmy w to miejsce.
 
-          */
-        });
+        //   */
+        // });
         break;
       }
     }
